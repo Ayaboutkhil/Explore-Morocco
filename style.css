@@ -638,4 +638,36 @@ img {
         flex-direction: column;
         text-align: center;
     }
+}.experiences-section {
+    width: 100%;
+    max-width: none;
+    padding: 80px 5%;
+    margin: 0;
+}
+
+.experiences-section .section-heading {
+    width: 100%;
+    text-align: center;
+}
+
+.experiences-section .destination-grid {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.experiences-section .destination-card {
+    width: 100%;
+}
+
+.experiences-section .destination-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .experiences-section .destination-grid {
+        grid-template-columns: 1fr;
+    }
 }
