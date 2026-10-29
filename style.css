@@ -38,11 +38,19 @@ img {
 
 /* ---------- Navigation ---------- */
 .header {
-    background-color: #fffdf8;
+    background-color: #fffdf8; /* Opaque au début */
     position: sticky;
     top: 0;
-    z-index: 10;
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+/* Style appliqué automatique lors du scroll */
+.header.scrolled {
+    background-color: rgba(255, 253, 248, 0.75); /* Opacité réduite */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .navbar {
@@ -97,7 +105,7 @@ img {
 .logo:hover .logo-icon {
     animation-play-state: paused; /* Met en pause la rotation lente */
     transform: scale(1.2) rotate(45deg); /* Zoom + bascule de l'icône */
-    stroke: #e08b4c;
+    stroke: #e08c4c;
     filter: drop-shadow(0 4px 8px rgba(196, 123, 67, 0.4));
 }
 

@@ -162,6 +162,17 @@
                 <p>✉️ contact@exploremorocco.com</p>
                 <p>📞 +212 600 000 000</p>
             </div>
+            <script>
+    const header = document.querySelector('.header');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
 </body>
 
 </html>
