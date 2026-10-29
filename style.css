@@ -169,7 +169,7 @@ img {
     padding: 13px 23px;
     border-radius: 4px;
     background-color: #c47b43;
-    color: white;
+    color: rgb(219, 18, 18);
     font-weight: 700;
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
